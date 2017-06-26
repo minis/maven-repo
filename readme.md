@@ -19,6 +19,15 @@ git push -u origin master
 
 4. Check https://github.com/minis/maven-repo  
 
+
+## If use maven-release-plugin.  
+Can use it to release and deploy.  
+```
+mvn release:prepare  
+mvn release:perform -Darguments=-DaltDeploymentRepository=minis-maven-repo::default::file:/minis/maven-repo/repository  
+```
+
+
 ## How to use this maven repository.
 
 Config pom.xml for your project.   
